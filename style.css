@@ -1,0 +1,72 @@
+/*navbar*/
+ul
+{
+  list-style-type: none;
+  margin:0;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5.6rem;
+  top:0;
+  left:0;
+  position: fixed; /* always stays on top */
+  width: 100%;
+  z-index: 9999;
+  flex-direction:row;
+}
+
+@media(max-width:480px){
+    ul{
+        gap:1rem;
+    }
+}
+
+li a 
+{
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  text-decoration: none;
+  color: rgb(26, 48, 78);
+  font-family: garamond, serif;
+  font-weight: bold;
+  padding: clamp(0.4rem, 1vw, 0.6rem)
+           clamp(0.6rem, 2vw, 0.9rem);
+  border-radius: 2rem;
+  transition: background-color .5s;
+
+  position: relative;
+  z-index: 10000;
+}
+
+li a:hover 
+{
+  background-color: rgb(131, 172, 229);
+  color: rgb(255, 255, 255);
+}
+
+/*general thing idk*/
+html{
+    background-image: url("https://gweka.com/wp-content/uploads/2020/12/Engineering-Design-1.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin:0;
+}
+
+.content{
+    margin-top:4rem;
+    padding: clamp(0.6rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
+}
+
+.textbox1{
+    background-color:rgb(255, 255, 255, 0.67);
+    border-radius:2rem;
+    height:max-content;
+    margin:0.5rem;
+    padding:1rem;
+}
